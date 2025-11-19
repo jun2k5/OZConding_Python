@@ -31,11 +31,7 @@ class Challenge03:
 
     @staticmethod    
     def sixth_sol(won, plus, period):
-        first_won = won
-        for i in range(period):
-            won += won * (plus / 100)
-        result = won - first_won
-        return print(f"Result_06 : {result}")
+        return print(f"Result_06 : {won * plus / 100 * period}")
 
 if __name__ == "__main__":
     print("===========================================")
